@@ -29,6 +29,7 @@ public class CoreDataHelper {
         context.persistentStoreCoordinator = coordinator
     }
     
+    // MARK: - private method
     @objc private func applicationDocumentsDirectory() -> String {
         if debug == 1 {
             print("Running \(self.desc()) '\(NSStringFromSelector(#selector(applicationDocumentsDirectory)))'")
@@ -57,7 +58,9 @@ public class CoreDataHelper {
         return "CoreDataHelper"
     }
     
+    // MARK: - CoreData Setup
     private func storeURL() -> NSURL {
+        print("\(self.applicationStoreDirectory().URLByAppendingPathComponent(storeFileName).path)")
         return self.applicationStoreDirectory().URLByAppendingPathComponent(storeFileName)
     }
     
