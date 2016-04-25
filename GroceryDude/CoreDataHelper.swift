@@ -73,8 +73,10 @@ public class CoreDataHelper {
             return
         }
         
+        let options:[NSObject:AnyObject] = [NSMigratePersistentStoresAutomaticallyOption:true, NSInferMappingModelAutomaticallyOption:true, NSSQLitePragmasOption:["journal_mode":"DELETE"]]
+        
         do {
-            self.store = try self.coordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: nil)
+            self.store = try self.coordinator?.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: self.storeURL(), options: options)
         }
         catch {
             print("loadStore failed")

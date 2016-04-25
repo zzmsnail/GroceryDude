@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA56E9B1CCC823C003C5A4F /* Measurement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA56E991CCC823C003C5A4F /* Measurement+CoreDataProperties.swift */; };
+		0AA56E9C1CCC823C003C5A4F /* Measurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA56E9A1CCC823C003C5A4F /* Measurement.swift */; };
+		0AA56EA01CCC8793003C5A4F /* Amount+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA56E9E1CCC8793003C5A4F /* Amount+CoreDataProperties.swift */; };
+		0AA56EA11CCC8793003C5A4F /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA56E9F1CCC8793003C5A4F /* Amount.swift */; };
+		0AA56EA31CCC8822003C5A4F /* Model2ToModel3.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0AA56EA21CCC8822003C5A4F /* Model2ToModel3.xcmappingmodel */; };
 		0AC07A011CC7D0E200D6AF73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC07A001CC7D0E200D6AF73 /* AppDelegate.swift */; };
 		0AC07A031CC7D0E200D6AF73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC07A021CC7D0E200D6AF73 /* ViewController.swift */; };
 		0AC07A061CC7D0E200D6AF73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC07A041CC7D0E200D6AF73 /* Main.storyboard */; };
@@ -38,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA56E991CCC823C003C5A4F /* Measurement+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Measurement+CoreDataProperties.swift"; path = "../Measurement+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AA56E9A1CCC823C003C5A4F /* Measurement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Measurement.swift; path = ../Measurement.swift; sourceTree = "<group>"; };
+		0AA56E9D1CCC8704003C5A4F /* GroceryDude 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GroceryDude 3.xcdatamodel"; sourceTree = "<group>"; };
+		0AA56E9E1CCC8793003C5A4F /* Amount+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Amount+CoreDataProperties.swift"; path = "../Amount+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0AA56E9F1CCC8793003C5A4F /* Amount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Amount.swift; path = ../Amount.swift; sourceTree = "<group>"; };
+		0AA56EA21CCC8822003C5A4F /* Model2ToModel3.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Model2ToModel3.xcmappingmodel; sourceTree = "<group>"; };
 		0AC079FD1CC7D0E100D6AF73 /* GroceryDude.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceryDude.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC07A001CC7D0E200D6AF73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC07A021CC7D0E200D6AF73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,7 @@
 		0AC07A231CC7D0E200D6AF73 /* GroceryDudeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryDudeUITests.swift; sourceTree = "<group>"; };
 		0AC07A251CC7D0E200D6AF73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AC07A321CC7D1F700D6AF73 /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		0AEB4AE71CCBA67100B7BA6D /* GroceryDude 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GroceryDude 2.xcdatamodel"; sourceTree = "<group>"; };
 		9AAB48AF1CCA108200C749C4 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9AAB48B01CCA108200C749C4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,8 +150,13 @@
 			isa = PBXGroup;
 			children = (
 				0AC07A071CC7D0E200D6AF73 /* GroceryDude.xcdatamodeld */,
+				0AA56EA21CCC8822003C5A4F /* Model2ToModel3.xcmappingmodel */,
 				9AAB48AF1CCA108200C749C4 /* Item+CoreDataProperties.swift */,
 				9AAB48B01CCA108200C749C4 /* Item.swift */,
+				0AA56E9E1CCC8793003C5A4F /* Amount+CoreDataProperties.swift */,
+				0AA56E9F1CCC8793003C5A4F /* Amount.swift */,
+				0AA56E991CCC823C003C5A4F /* Measurement+CoreDataProperties.swift */,
+				0AA56E9A1CCC823C003C5A4F /* Measurement.swift */,
 				0AC07A321CC7D1F700D6AF73 /* CoreDataHelper.swift */,
 			);
 			name = "Generic Core Data Classes";
@@ -279,12 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA56EA01CCC8793003C5A4F /* Amount+CoreDataProperties.swift in Sources */,
+				0AA56EA31CCC8822003C5A4F /* Model2ToModel3.xcmappingmodel in Sources */,
 				0AC07A091CC7D0E200D6AF73 /* GroceryDude.xcdatamodeld in Sources */,
 				0AC07A031CC7D0E200D6AF73 /* ViewController.swift in Sources */,
+				0AA56E9C1CCC823C003C5A4F /* Measurement.swift in Sources */,
 				0AC07A331CC7D1F700D6AF73 /* CoreDataHelper.swift in Sources */,
+				0AA56EA11CCC8793003C5A4F /* Amount.swift in Sources */,
 				0AC07A011CC7D0E200D6AF73 /* AppDelegate.swift in Sources */,
 				9AAB48B21CCA108200C749C4 /* Item.swift in Sources */,
 				9AAB48B11CCA108200C749C4 /* Item+CoreDataProperties.swift in Sources */,
+				0AA56E9B1CCC823C003C5A4F /* Measurement+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,9 +557,11 @@
 		0AC07A071CC7D0E200D6AF73 /* GroceryDude.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				0AA56E9D1CCC8704003C5A4F /* GroceryDude 3.xcdatamodel */,
+				0AEB4AE71CCBA67100B7BA6D /* GroceryDude 2.xcdatamodel */,
 				0AC07A081CC7D0E200D6AF73 /* GroceryDude.xcdatamodel */,
 			);
-			currentVersion = 0AC07A081CC7D0E200D6AF73 /* GroceryDude.xcdatamodel */;
+			currentVersion = 0AA56E9D1CCC8704003C5A4F /* GroceryDude 3.xcdatamodel */;
 			path = GroceryDude.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

@@ -14,17 +14,31 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let newItemNames:[String] = ["Apples", "Milk", "Bread", "Cheese", "Sausages", "Butter", "Orange Juice", "Cereal", "Coffee", "Eggs", "Tomatoes", "Fish"]
-        
+        self.fetch()
+    }
+    
+    private func demo() {
         let appDelegate:AppDelegate? = UIApplication.sharedApplication().delegate as? AppDelegate
         
-        for name in newItemNames {
-            let item:Item = NSEntityDescription.insertNewObjectForEntityForName("Item", inManagedObjectContext: (appDelegate?.cdh.context)!) as! Item
-            
-            item.name = name
+        for index in 0...50000 {
+            let measurement:Measurement = NSEntityDescription.insertNewObjectForEntityForName("Measurement", inManagedObjectContext: (appDelegate?.cdh.context)!) as! Measurement
+            measurement.abc = String.init(format: "-->> LOTS OF TEST DATA x%i", index)
         }
         
         appDelegate?.cdh.saveContext()
+    }
+    
+    func fetch() -> [AnyObject] {
+        let appDelegate:AppDelegate? = UIApplication.sharedApplication().delegate as? AppDelegate
+        let fetchRequest:NSFetchRequest = NSFetchRequest(entityName: "Amount")
+        fetchRequest.fetchLimit = 50
+        let fetchObjects:[AnyObject]? = try! appDelegate?.cdh.context.executeFetchRequest(fetchRequest)
+        for item in fetchObjects! {
+            let object = item as? Amount
+            print("\(object?.xyz)")
+        }
+        
+        return fetchObjects!
     }
 
     override func didReceiveMemoryWarning() {
